@@ -42,7 +42,7 @@ After completing the layout design, several critical steps must be taken to ensu
 
 **Fillers** are used to maintain consistent metal layer density across the chip, which is crucial for uniform manufacturing. This helps prevent issues such as metal peeling, cracking, or mechanical stress. The process design kit (PDK)-specific density rules can be verified using a Design Rule Check (DRC), and fillers can be added automatically using dedicated tools in Cadence.
 
-# Full IC Chip Design (Bondpads, Slots and Fillers)
+# Combination of all the blocks for different frequencies
 The schematic simulation below illustrates the operation of all the blocks working together. It begins with the integrate input pulse signal, which is inverted by an inverter and sent to Tunable Delays 1 and 2. These delays shift the Track 2 signal by 4 ps. The resulting signals are then fed into the CML switch, which tracks the input signal when the switch is ON and resets it when it is OFF.
 
 The outputs from the CML switches are directed to the subtractor, where the difference between the two signals generates spikes resembling Gaussian pulses. The pulse width corresponds to the integration time. During the rising edge of the integrate signal, the integrator performs integration and holds the output steady until the signal turns off.
