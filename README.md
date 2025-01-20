@@ -8,7 +8,7 @@ Broadband data converters play a crucial role in broadband digital communication
 
 Analog-to-Digital Converters (ADCs) are essential for converting continuous analog signals into discrete digital signals. By sampling the analog signal at regular time intervals, ADCs produce digital outputs in binary form. They are widely used in applications such as audio devices, sensors, and communication systems, enabling the digital processing of analog data.
 
-IEEE Paper: https://ieeexplore.ieee.org/document/9482511
+Reference IEEE Paper: https://ieeexplore.ieee.org/document/9482511
 
 </div>
 
@@ -60,6 +60,49 @@ After completing the layout design, several critical steps must be taken to ensu
 
 </div>
 
+<div style="text-align: justify;">
+
+# Steps in Chip Design and Analysis
+
+**1. Full Layout Design**: Developed the complete layout of the chip, ensuring accurate placement and routing of components to meet the desired specifications.
+Electromagnetic Simulations (RF Pro, Keysight)
+
+**2. Electromagnetic Simulations (RF Pro, Keysight):** Performed EM simulations using RF Pro software to analyze and optimize high-frequency behavior, focusing on parasitics and electromagnetic effects.
+RC Extraction
+
+**3. RC Extraction:** Extracted resistance (R) and capacitance (C) values from the layout to evaluate and minimize their impact on circuit performance.
+Impedance Calculation (ADS, Keysight)
+
+**4. Impedance Calculation (ADS, Keysight):** Used Advanced Design System (ADS) to calculate impedance values for matching network designs, ensuring proper signal transmission.
+Transmission Line Design for Input Signals
+
+**5. Transmission Line Design for Input Signals:** Designed transmission lines optimized for the input signal's frequency range, maintaining signal integrity by minimizing reflections and losses.
+FFT Analysis with Coherent Sampling
+
+**6. FFT Analysis with Coherent Sampling:** Conducted Fast Fourier Transform (FFT) analysis using coherent sampling to verify signal integrity and ensure accurate frequency-domain representation.
+Post-Layout Simulations
+
+**7. Post-Layout Simulations:** Simulated the design after layout completion to validate functionality and performance, accounting for layout parasitics and real-world effects.
+Voltage and Current Drop Analysis
+
+**8. Voltage and Current Drop Analysis:** Analyzed voltage and current drops from the schematic level through the S-parameter file to ensure power delivery and performance consistency.
+S-Parameter Analysis
+
+**9. S-Parameter Analysis** Performed S-parameter analysis to evaluate the layout's high-frequency performance, including reflection and transmission characteristics.
+
+**10. Metal Selection Based on Current Densities:** Evaluated and selected metals for routing layers based on their current-carrying capacities and resistance to electromigration.
+
+**11. Via Analysis:** Properly analyzed via placements to ensure reliable connections between metal layers and to minimize resistance and inductance.
+
+**12. Metal Layer Usage:** Utilized multiple metal layers effectively:
+                           Metal 1 to Metal 5: Used for routing signals and maintaining connectivity.
+                           Top Metal 1 and Top Metal 2: Leveraged for power signals due to their higher current-carrying capabilities.
+
+**13. Bond Pads, Fillers, and Slots Installation:** Integrated bond pads, fillers, and slots into the layout to prevent cracking and ensure structural integrity during the fabrication process.
+
+</div>
+
+
 # Combination of all the blocks for different frequencies
 
 <div style="text-align: justify;">
@@ -68,10 +111,19 @@ The schematic simulation below illustrates the operation of all the blocks worki
 
 The outputs from the CML switches are directed to the subtractor, where the difference between the two signals generates spikes resembling Gaussian pulses. The pulse width corresponds to the integration time. During the rising edge of the integrate signal, the integrator performs integration and holds the output steady until the signal turns off.
 
-**Schematic simulation for 1 GHz input frequency and sampling frequency of 10 GS/s.**
-
 </div>
+
+**Schematic simulation for 1 GHz input frequency and sampling frequency of 10 GS/s.**
 
 ![image](https://github.com/user-attachments/assets/c84d1aaa-f73e-44fc-a1bb-a3547ace0b1c)
 
+# Conclusion
+
+<div style="text-align: justify;">
+
+The operating principle of STI sampling using the IHC was thoroughly examined both theoretically and practically, accompanied by a comprehensive mathematical analysis. 
+
+This sampler demonstrated a 1 dB large-signal bandwidth of 61.5 GHz and a 3 dB bandwidth of 70.1 GHz. At a sampling rate of 10 GS/s, the output signal achieved an ENOB exceeding 5 bits across the frequency range of 25 GHz to 85 GHz. A notable advantage of this charge sampler is that its bandwidth is determined by the integration time rather than the integration capacitor. As a result, the capacitance in the STI sampler can be increased to minimize noise without affecting bandwidth. However, a higher capacitance reduces the sampling frequency, introducing a trade-off between noise and sampling frequency for the STI sampler.
+
+</div>
 
