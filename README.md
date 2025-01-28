@@ -111,6 +111,8 @@ The schematic simulation below illustrates the operation of all the blocks worki
 
 The outputs from the CML switches are directed to the subtractor, where the difference between the two signals generates spikes resembling Gaussian pulses. The pulse width corresponds to the integration time. During the rising edge of the integrate signal, the integrator performs integration and holds the output steady until the signal turns off.
 
+**Total Power Consumption** is ca. 550mW
+
 </div>
 
 **Schematic simulation for 1 GHz input frequency and sampling frequency of 10 GS/s.**
