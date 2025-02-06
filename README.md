@@ -8,8 +8,12 @@ Broadband data converters play a crucial role in broadband digital communication
 
 Analog-to-Digital Converters (ADCs) are essential for converting continuous analog signals into discrete digital signals. By sampling the analog signal at regular time intervals, ADCs produce digital outputs in binary form. They are widely used in applications such as audio devices, sensors, and communication systems, enabling the digital processing of analog data.
 
-Reference: https://ieeexplore.ieee.org/document/9482511
-
+IEEE Reference: https://ieeexplore.ieee.org/document/9482511
+Textbooks: 
+1. RF Microelectronics, Razavi, Behzad.
+2. Design of Analog CMOS Integrated Circuits, Razavi, Behzad.
+3. Analysis and Design of Analog Integrated Circuits, Paul R. Gray, Paul J. Hurst, Stephen H. Lewis, and Robert G. Meyer.
+   
 </div>
 
 # Objective and Tasks
