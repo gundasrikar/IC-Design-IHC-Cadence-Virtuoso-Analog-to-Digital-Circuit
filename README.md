@@ -44,11 +44,11 @@ The tunable delay technique minimizes the difference in delay between the two co
 ![image](https://github.com/user-attachments/assets/e6c9dff8-0ba4-44ec-bddc-cda1029f158f)
 
 
-# Full Layout Design
-![Without_Bondpads](https://github.com/user-attachments/assets/d1fdc34e-309b-4847-9d0d-a975bfd4e9df)
+<!-- # Full Layout Design -->
+<!-- ![Without_Bondpads](https://github.com/user-attachments/assets/d1fdc34e-309b-4847-9d0d-a975bfd4e9df) -->
 
-# Full IC Chip Design (Bondpads, Slots, Fillers and Transmission Lines)
-![Bondpadswithfillers](https://github.com/user-attachments/assets/ff517c14-4fa9-4f55-a8cd-622736aae213)
+<!-- # Full IC Chip Design (Bondpads, Slots, Fillers and Transmission Lines) -->
+<!-- ![Bondpadswithfillers](https://github.com/user-attachments/assets/ff517c14-4fa9-4f55-a8cd-622736aae213) -->
 
 <div style="text-align: justify;">
 
